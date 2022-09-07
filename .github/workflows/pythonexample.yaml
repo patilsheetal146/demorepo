@@ -1,0 +1,11 @@
+name: Run python script
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+  steps:
+   - name: Display the path
+      run: |
+        import os
+        print(os.environ['PATH'])
+      shell: python
