@@ -1,0 +1,7 @@
+name: second workflow file
+on: pull
+jobs:
+  build:
+  runs-on: ubuntu-latest
+  steps: 
+    - run: echo "helloo2"
